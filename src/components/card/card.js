@@ -1,8 +1,9 @@
 import flag from"./flag.png"
 import React from "react";
 import './card.css';
+import countriesData from "../../countriesData";
 
-export default function Card(){
+export default function Card({name}){
     return(
         <div className="country-card">
             <div className="imge">
@@ -10,16 +11,16 @@ export default function Card(){
             </div>
             <div className="content">
                 <div className="name">
-                    Barbados
+                   {name}
                 </div>
                 <div className="population">
-                    population: 2,82,721
+                   <span>population : </span> 2,82,721
                 </div>
                 <div className="region">
-                    region: american
+                  <span>region : </span>american
                 </div>
                 <div className="captital">
-                    captital: bridgestown 
+                  <span>captital :</span>  bridgestown 
                 </div>
             </div>
         </div>
